@@ -1,0 +1,5 @@
+.hallmark/
+_ref/
+AGENTS.md
+clinic-data.md
+*.py

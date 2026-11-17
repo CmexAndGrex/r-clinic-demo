@@ -1,0 +1,138 @@
+/* Hallmark — shape: Confident dental showcase ● genre: editorial-luxury ● theme: Confident Homepage 2 (by request) ● job: book ● idea: "a calm blue-and-mint clinic where the family dynasty and the doctors carry the page" ● vibe: "premium, airy, clinical-soft" */
+/* Hallmark — pre-emit critique: P5 H4 E4 S5 R4 V4 ● weakest: E, the price table is the densest block, so its rows keep wide breathing room and tabular figures */
+
+:root {
+  /* Brand */
+  --c-blue: #2f80ed;
+  --c-blue-bright: #3898ec;
+  --c-blue-deep: #1b64c4;
+  --c-blue-ink: #0d3f7d;
+  --c-blue-soft: #eaf3ff;
+  --c-mint: #4fe8ba;
+  --c-mint-soft: #e6fbf4;
+  --c-mint-ink: #0f7a5d;
+  --c-orange: #ff9740;
+  --c-orange-soft: #fff2e6;
+  --c-orange-ink: #a85412;
+  --c-wa: #1c9e57;
+  --c-wa-soft: #e8f9ef;
+  --c-tg: #2a9fd8;
+  --c-tg-soft: #e8f6fd;
+  --c-vk: #3d6ae0;
+  --c-vk-soft: #edf1fe;
+
+  /* Ink and surfaces */
+  --c-ink: #0b1b2e;
+  --c-ink-2: #22344b;
+  --c-muted: #5d6f86;
+  --c-muted-2: #8194aa;
+  --c-line: #e3ebf5;
+  --c-line-strong: #cfe0f2;
+  --c-paper: #ffffff;
+  --c-paper-cool: #f8fafc;
+  --c-paper-blue: #f4f8fd;
+  --c-white: #ffffff;
+
+  /* Cloud surfaces */
+  --c-cloud-100: #f8fbff;
+  --c-cloud-200: #eef7ff;
+  --c-cloud-300: #e0f0ff;
+  --c-cloud-400: #cfe7ff;
+  --c-cloud-500: #b7dbff;
+  --c-cloud-line: #d8eaff;
+  --c-cloud-glow: rgba(255, 255, 255, 0.82);
+  --grad-cloud: radial-gradient(120% 100% at 22% 6%, #ffffff 0%, #f0f9ff 28%, #daedff 62%, #bfddff 100%);
+  --grad-cloud-card: linear-gradient(155deg, #f9fcff 0%, #eef7ff 48%, #e2f0ff 100%);
+  --grad-blue-band: linear-gradient(135deg, #174f9c 0%, #2f80ed 55%, #46a8f5 100%);
+
+  /* Glass and dark overlays */
+  /* Case slider */
+  --c-slider-halo: rgba(9, 23, 42, 0.3);
+  --shadow-grip: 0 10px 26px -8px rgba(9, 23, 42, 0.48);
+
+  --c-glass: rgba(255, 255, 255, 0.72);
+  --c-glass-soft: rgba(255, 255, 255, 0.16);
+  --c-glass-line: rgba(255, 255, 255, 0.9);
+  --c-veil: rgba(9, 23, 42, 0.58);
+  --c-veil-strong: rgba(9, 23, 42, 0.82);
+  --c-on-dark: rgba(255, 255, 255, 0.76);
+  --c-backdrop: rgba(8, 21, 38, 0.44);
+
+  /* Gradients */
+  --grad-blue: linear-gradient(135deg, var(--c-blue) 0%, var(--c-blue-bright) 100%);
+  --grad-blue-deep: linear-gradient(140deg, #123d74 0%, var(--c-blue-deep) 58%, var(--c-blue) 100%);
+  --grad-text: linear-gradient(94deg, var(--c-blue) 0%, var(--c-blue-bright) 62%, #38b9e8 108%);
+  --grad-mint-text: linear-gradient(94deg, var(--c-mint-ink) 0%, var(--c-blue) 95%);
+  --grad-showcase: linear-gradient(145deg, #e8f2ff 0%, #f5fbff 46%, var(--c-mint-soft) 100%);
+  --grad-mint: linear-gradient(145deg, var(--c-mint-soft) 0%, #f4fbff 70%, #edf5ff 100%);
+  --grad-orange: linear-gradient(135deg, var(--c-orange) 0%, #ffb36f 100%);
+  --grad-image-veil: linear-gradient(to top, var(--c-veil-strong) 0%, rgba(9, 23, 42, 0.34) 42%, rgba(9, 23, 42, 0) 76%);
+  --grad-card-veil: linear-gradient(to top, var(--c-veil-strong) 0%, rgba(9, 23, 42, 0.6) 46%, rgba(9, 23, 42, 0) 100%);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(15, 40, 75, 0.06);
+  --shadow-cloud: 0 44px 96px -48px rgba(23, 79, 156, 0.48), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  --shadow-cloud-card: 0 24px 50px -30px rgba(23, 79, 156, 0.28), 0 2px 8px rgba(47, 128, 237, 0.06);
+  --shadow-tooth: 0 30px 36px rgba(23, 79, 156, 0.18);
+  --shadow-card: 0 24px 54px -22px rgba(15, 52, 96, 0.24), 0 2px 8px rgba(15, 52, 96, 0.05);
+  --shadow-lift: 0 30px 60px -24px rgba(15, 52, 96, 0.32);
+  --shadow-pill: 0 12px 26px -10px rgba(47, 128, 237, 0.55);
+  --shadow-pop: 0 40px 100px -24px rgba(8, 30, 60, 0.44);
+  --shadow-header: 0 18px 40px -26px rgba(15, 52, 96, 0.32);
+
+  /* Type */
+  --font-display: "Albert Sans", "Manrope", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Albert Sans", "Manrope", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-num: "Albert Sans", "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.0625rem;
+  --text-lg: 1.25rem;
+  --text-xl: clamp(1.35rem, 1.1vw + 1rem, 1.75rem);
+  --text-h2: clamp(2.15rem, 3.6vw, 3.5rem);
+  --text-h1: clamp(2.5rem, 3.3vw, 3.75rem);
+
+  /* Space and shape */
+  --space-3xs: 2px;
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+  --container: 1360px;
+  --gutter: clamp(20px, 4vw, 48px);
+  --header-h: 88px;
+  --radius-xs: 10px;
+  --radius-sm: 14px;
+  --radius-md: 20px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-2xl: 40px;
+  --radius-pill: 999px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --dur-micro: 140ms;
+  --dur-short: 240ms;
+  --dur-long: 520ms;
+
+  /* Layers */
+  --z-base: 1;
+  --z-raised: 10;
+  --z-sticky: 200;
+  --z-drawer: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+}
+
+@media (max-width: 980px) {
+  :root {
+    --header-h: 76px;
+  }
+}
